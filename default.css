@@ -1,7 +1,7 @@
 /* line 28, default.scss */
 body {
   color: black;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
 
 /* line 33, default.scss */
@@ -26,106 +26,107 @@ h1, h2, h3 {
 
 /* line 48, default.scss */
 h1 {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-weight: bold;
 }
 
-/* line 52, default.scss */
+/* line 53, default.scss */
 h2, h3 {
-  font-family: Georgia, serif;
-  color: #0068b1;
+  font-family: baskerville, "warnock pro", "goudy old style", palatino, "book antiqua", georgia, serif;
+  color: #001a31;
 }
 
-/* line 57, default.scss */
+/* line 58, default.scss */
 h2 {
   font-style: italic;
   font-size: 4em;
 }
 
-/* line 62, default.scss */
+/* line 63, default.scss */
 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 67, default.scss */
+/* line 68, default.scss */
 em {
   color: #5b5b5b;
   text-shadow: 1px 1px 1px #003364;
 }
 
-/* line 72, default.scss */
+/* line 73, default.scss */
 strong, b {
   font-weight: bolder;
-  color: #0068b1;
+  color: #001a31;
   text-shadow: 1px 1px 1px #003364;
 }
 
-/* line 78, default.scss */
+/* line 79, default.scss */
 pre {
   margin: 1em 30px;
   padding: 0.5em 10px;
 }
 
-/* line 84, default.scss */
+/* line 85, default.scss */
 code {
-  font-family: "Courier New", Courier, monospace;
+  font-family: inconsolata, consolas, "deja vu sans mono", "droid sans mono", proggy, monofur, profont, monaco, "andale mono", courier, monospace;
   font-size: .6em;
   font-weight: bold;
 }
 
-/* line 90, default.scss */
+/* line 91, default.scss */
 pre.sh_sourceCode {
   background-color: transparent;
 }
-/* line 93, default.scss */
+/* line 94, default.scss */
 pre.sh_sourceCode .sh_string {
   color: #32a632;
-  font-family: "Courier New", Courier, monospace;
+  font-family: inconsolata, consolas, "deja vu sans mono", "droid sans mono", proggy, monofur, profont, monaco, "andale mono", courier, monospace;
 }
-/* line 98, default.scss */
+/* line 99, default.scss */
 pre.sh_sourceCode .sh_regexp {
   color: #806e42;
-  font-family: "Courier New", Courier, monospace;
+  font-family: inconsolata, consolas, "deja vu sans mono", "droid sans mono", proggy, monofur, profont, monaco, "andale mono", courier, monospace;
 }
-/* line 103, default.scss */
+/* line 104, default.scss */
 pre.sh_sourceCode .sh_specialchar {
   color: #806e42;
-  font-family: "Courier New", Courier, monospace;
+  font-family: inconsolata, consolas, "deja vu sans mono", "droid sans mono", proggy, monofur, profont, monaco, "andale mono", courier, monospace;
 }
 
-/* line 109, default.scss */
+/* line 110, default.scss */
 .title_desc {
   text-align: right;
   color: #5b5b5b;
   font-size: 1.5em;
   margin-right: 30px;
 }
-/* line 115, default.scss */
+/* line 116, default.scss */
 .title_desc li {
   padding-bottom: 0.3em;
 }
 
-/* line 120, default.scss */
+/* line 121, default.scss */
 .unreadable {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-/* line 125, default.scss */
+/* line 126, default.scss */
 .content > ul {
   list-style: none;
   padding-left: 30px;
   font-size: 2.5em;
 }
 
-/* line 131, default.scss */
+/* line 132, default.scss */
 .content > ul > li {
   padding: 0.3em 0 0.3em 0;
   margin-left: 0;
   line-height: 1.2em;
 }
 
-/* line 137, default.scss */
+/* line 138, default.scss */
 .content > p {
   text-align: left;
   font-size: 2.5em;
@@ -136,7 +137,7 @@ pre.sh_sourceCode .sh_specialchar {
 
 /* Print */
 @media print {
-  /* line 147, default.scss */
+  /* line 148, default.scss */
   .slide, .preso {
     margin: 10px;
     padding: 0;

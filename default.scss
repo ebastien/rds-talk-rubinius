@@ -1,12 +1,12 @@
 @import "compass/css3";
 
-$codefont: 'Courier New', Courier, monospace;
-$mainfont: 'Trebuchet MS', Helvetica, sans-serif;
-$altfont: Georgia, serif;
+$codefont: inconsolata, consolas, 'deja vu sans mono', 'droid sans mono', proggy, monofur, profont, monaco, 'andale mono', courier, monospace;
+$mainfont: 'helvetica neue', helvetica, arial, sans-serif;
+$altfont: baskerville, 'warnock pro', 'goudy old style', palatino, 'book antiqua', georgia, serif;
 
 $maincolor: #000;
 $mainshadow: rgb(0,51,100);
-$altcolor: rgb(0,104,177);
+$altcolor: rgb(0, 26, 49); //rgb(0,104,177);
 $altshadow: rgb(100,110,190);
 $thirdcolor: rgb(91,91,91);
 $backcolor: #dde7f1;
@@ -47,6 +47,7 @@ h1, h2, h3 {
 
 h1 {
   font-family: $mainfont;
+  font-weight: bold;
 }
 
 h2, h3 {

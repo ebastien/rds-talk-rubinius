@@ -4,7 +4,7 @@
 <div class="title_desc">
   <ul>
     <li>Emmanuel Bastien</li>
-    <li>Riviera.rb 2013-02-05</li>
+    <li>Riviera.rb</li>
   </ul>
 </div>
 
