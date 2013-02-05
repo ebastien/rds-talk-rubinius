@@ -19,17 +19,20 @@
 
 !SLIDE
 ## Architecture ##
-* Rubinius VM / JIT and GC (C++ & LLVM)
+* Rubinius VM, JIT and GC (C++ & LLVM)
 * Language foundations (Ruby)
 * Standard library (Ruby)
 
 !SLIDE
-## Debugger & Profiler ##
-* [Demo]
+## Key features ##
+* Generational garbage collector
+* MRI-compatible C extensions API
+* No Global Interpreter Lock
+* Concurrency: actors, fibers, threads
+* Built-in debugger and profiler
 
 !SLIDE
-## Compilation stages ##
-* [ByteByteJump on Rubinius?]
+## Demo ##
 
 !SLIDE
 ## Project status ##
