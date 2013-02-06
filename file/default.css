@@ -8,11 +8,11 @@ body {
 .slide {
   width: 1024px;
   height: 768px;
-  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #dde7f1), color-stop(100%, #ffffff));
-  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, -webkit-linear-gradient(top left, #dde7f1, #ffffff);
-  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, -moz-linear-gradient(top left, #dde7f1, #ffffff);
-  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, -o-linear-gradient(top left, #dde7f1, #ffffff);
-  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('images/ruby.png?1360185019') no-repeat 738px 482px, -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #dde7f1), color-stop(100%, #ffffff));
+  background: url('images/ruby.png?1360185019') no-repeat 738px 482px, -webkit-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('images/ruby.png?1360185019') no-repeat 738px 482px, -moz-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('images/ruby.png?1360185019') no-repeat 738px 482px, -o-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('images/ruby.png?1360185019') no-repeat 738px 482px, linear-gradient(top left, #dde7f1, #ffffff);
   text-shadow: none;
 }
 
@@ -44,8 +44,8 @@ h2 {
 
 /* line 63, default.scss */
 a {
-  color: black;
-  text-decoration: none;
+  color: #5b5b5b;
+  text-decoration: underline;
 }
 
 /* line 68, default.scss */
