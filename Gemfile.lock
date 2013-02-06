@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/ebastien/showoff.git
-  revision: cf7d68548fbb36d110a90c6a136f89a389a45e4d
+  remote: git://github.com/schacon/showoff.git
+  revision: 1eae5791f04c5f58b6821b9e17aef0dcb20ebdb3
   specs:
     showoff (0.7.0)
       gli (~> 2)

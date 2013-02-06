@@ -8,11 +8,11 @@ body {
 .slide {
   width: 1024px;
   height: 768px;
-  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #dde7f1), color-stop(100%, #ffffff));
-  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, -webkit-linear-gradient(top left, #dde7f1, #ffffff);
-  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, -moz-linear-gradient(top left, #dde7f1, #ffffff);
-  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, -o-linear-gradient(top left, #dde7f1, #ffffff);
-  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #dde7f1), color-stop(100%, #ffffff));
+  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, -webkit-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, -moz-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, -o-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('images/ruby.png?1360184297') no-repeat 738px 482px, linear-gradient(top left, #dde7f1, #ffffff);
   text-shadow: none;
 }
 
