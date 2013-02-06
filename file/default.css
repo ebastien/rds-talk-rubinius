@@ -1,0 +1,150 @@
+/* line 28, default.scss */
+body {
+  color: black;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+/* line 33, default.scss */
+.slide {
+  width: 1024px;
+  height: 768px;
+  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #dde7f1), color-stop(100%, #ffffff));
+  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, -webkit-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, -moz-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, -o-linear-gradient(top left, #dde7f1, #ffffff);
+  background: url('/file/images/ruby.png?1360181311') no-repeat 738px 482px, linear-gradient(top left, #dde7f1, #ffffff);
+  text-shadow: none;
+}
+
+/* line 41, default.scss */
+h1, h2, h3 {
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 50px;
+  text-shadow: 3px 3px 3px #646ebe;
+}
+
+/* line 48, default.scss */
+h1 {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+
+/* line 53, default.scss */
+h2, h3 {
+  font-family: baskerville, "warnock pro", "goudy old style", palatino, "book antiqua", georgia, serif;
+  color: #001a31;
+}
+
+/* line 58, default.scss */
+h2 {
+  font-style: italic;
+  font-size: 4em;
+}
+
+/* line 63, default.scss */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 68, default.scss */
+em {
+  color: #5b5b5b;
+  text-shadow: 1px 1px 1px #003364;
+}
+
+/* line 73, default.scss */
+strong, b {
+  font-weight: bolder;
+  color: #001a31;
+  text-shadow: 1px 1px 1px #003364;
+}
+
+/* line 79, default.scss */
+pre {
+  margin: 1em 30px;
+  padding: 0.5em 10px;
+}
+
+/* line 85, default.scss */
+code {
+  font-family: inconsolata, consolas, "deja vu sans mono", "droid sans mono", proggy, monofur, profont, monaco, "andale mono", courier, monospace;
+  font-size: .6em;
+  font-weight: bold;
+}
+
+/* line 91, default.scss */
+pre.sh_sourceCode {
+  background-color: transparent;
+}
+/* line 94, default.scss */
+pre.sh_sourceCode .sh_string {
+  color: #32a632;
+  font-family: inconsolata, consolas, "deja vu sans mono", "droid sans mono", proggy, monofur, profont, monaco, "andale mono", courier, monospace;
+}
+/* line 99, default.scss */
+pre.sh_sourceCode .sh_regexp {
+  color: #806e42;
+  font-family: inconsolata, consolas, "deja vu sans mono", "droid sans mono", proggy, monofur, profont, monaco, "andale mono", courier, monospace;
+}
+/* line 104, default.scss */
+pre.sh_sourceCode .sh_specialchar {
+  color: #806e42;
+  font-family: inconsolata, consolas, "deja vu sans mono", "droid sans mono", proggy, monofur, profont, monaco, "andale mono", courier, monospace;
+}
+
+/* line 110, default.scss */
+.title_desc {
+  text-align: right;
+  color: #5b5b5b;
+  font-size: 1.5em;
+  margin-right: 30px;
+}
+/* line 116, default.scss */
+.title_desc li {
+  padding-bottom: 0.3em;
+}
+
+/* line 121, default.scss */
+.unreadable {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 126, default.scss */
+.content > ul {
+  list-style: none;
+  padding-left: 30px;
+  font-size: 2.5em;
+}
+
+/* line 132, default.scss */
+.content > ul > li {
+  padding: 0.3em 0 0.3em 0;
+  margin-left: 0;
+  line-height: 1.2em;
+}
+
+/* line 138, default.scss */
+.content > p {
+  text-align: left;
+  font-size: 2.5em;
+  line-height: 1.3em;
+  padding-left: 30px;
+  margin: 0;
+}
+
+/* Print */
+@media print {
+  /* line 148, default.scss */
+  .slide, .preso {
+    margin: 10px;
+    padding: 0;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border: none;
+    page-break-after: always;
+  }
+}
