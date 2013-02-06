@@ -1,4 +1,4 @@
 source "http://rubygems.org"
-gem "showoff", :github => "schacon/showoff"
+gem "showoff", :github => "ebastien/showoff"
 gem "compass"
 gem "parslet"
