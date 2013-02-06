@@ -33,6 +33,9 @@
 
 !SLIDE
 ## Demo ##
+* [Built-in debugger](https://github.com/ebastien/rds-talk-rubinius/tree/master/demo/bug.rb)
+* [Built-in profiler](https://github.com/ebastien/rds-talk-rubinius/tree/master/demo/prof.rb)
+* [A minimal viable compiler](https://github.com/ebastien/rds-talk-rubinius/tree/master/demo/scan.rb)
 
 !SLIDE
 ## Project status ##
