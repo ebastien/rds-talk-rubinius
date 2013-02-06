@@ -1,32 +1,32 @@
 require "rubygems"
 require "bundler/setup"
-require 'parslet'
+require "parslet"
 
-module OISC
-
+module Scan
   class Instruction
     def bytecode(g)
-      g.push_local 0            # 1
+      
+      g.push_local 0
+      
+      g.push_local 0
+      g.push_local 1
+      g.meta_push_0
+      g.send :fetch, 2, false
 
-      g.push_local 0            # 2
-      g.push_local 1            # 3
-      g.meta_push_0             # 4
-      g.send :fetch, 2, false   # 2
-
-      g.push_local 0            # 3
-      g.push_local 1            # 4
-      g.meta_push_1             # 5
-      g.meta_send_op_plus 0     # 4
+      g.push_local 0
+      g.push_local 1
+      g.meta_push_1
+      g.meta_send_op_plus 0
       g.set_local 1
-      g.meta_push_0             # 5
-      g.send :fetch, 2, false   # 3
+      g.meta_push_0
+      g.send :fetch, 2, false
 
-      g.meta_send_op_plus  0    # 2
+      g.meta_send_op_plus 0
 
-      g.push_local 1            # 3
+      g.push_local 1
       g.swap_stack
-      g.send :[]=, 2, false     # 1
-      g.pop                     # 0
+      g.send :[]=, 2, false
+      g.pop
     end
   end
 
@@ -38,7 +38,7 @@ module OISC
 
   class Lexer < Parslet::Parser
     alias_method :tokenize, :parse
-    rule(:instr) { str 'I' }
+    rule(:instr) { str('I') }
     rule(:expr) { instr.as(:instr).repeat.as(:expr) }
     root :expr
   end
@@ -59,18 +59,18 @@ module OISC
     def run
       @output = Rubinius::Generator.new
       @output.set_line Integer(1)
-      
       @output.meta_push_0
-      @output.set_local 1 # PC
-      
-      memory = (0..10).to_a
-      memory.each do |m|
+      @output.set_local 1
+
+      (1..10).each do |m|
         @output.push_int m
       end
-      @output.make_array memory.length
+
+      @output.make_array 10
       @output.set_local 0
 
       @input.bytecode @output
+
       @output.use_detected
       @output.push_local 0
       @output.ret
@@ -81,7 +81,6 @@ module OISC
 
   class AST < Rubinius::Compiler::Stage
     next_stage Generator
-
     def run
       @output = Parser.new.apply @input
       run_next
@@ -89,7 +88,7 @@ module OISC
   end
 
   class Code < Rubinius::Compiler::Stage
-    stage :oisc_code
+    stage :scan_code
     next_stage AST
 
     def initialize(compiler, last)
@@ -108,7 +107,7 @@ module OISC
   end
 
   def self.compile(code)
-    compiler = Rubinius::Compiler.new :oisc_code, :compiled_method
+    compiler = Rubinius::Compiler.new :scan_code, :compiled_method
     compiler.parser.input code, "(eval)", 1
     bytecode = compiler.run
     scope = ::Rubinius::StaticScope.new Object
@@ -116,6 +115,8 @@ module OISC
     ::Rubinius.attach_method :__run__, bytecode, scope, context
     context.__run__
   end
+
 end
 
-puts OISC::compile("I" * 10).inspect
+puts Scan::compile("I" * 20).inspect
+
